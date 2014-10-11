@@ -5,7 +5,7 @@ library('ggplot2')
 library('dplyr')
 library('knitr')
 
-## part 1: plot steps per day
+## part 1: plot steps per day ...
 data$date <- as.POSIXct(data$date)
 plot1 <- ggplot(data, aes(x = date, y = steps)) +
     geom_histogram(stat = 'identity') + 

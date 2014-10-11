@@ -1,4 +1,4 @@
-# Analysis and Process
+# Analysis and process
 ## Data and packages
 Download the raw [activity monitoring data](https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip) and place file in your working directory. 
 

@@ -11,7 +11,7 @@ plot1 <- ggplot(data, aes(x = date, y = steps)) +
     geom_histogram(stat = 'identity') + 
     labs(title = "Steps Per Day", x = 'Date', y = 'Number of Steps') +  
     scale_x_datetime()
-plot1    
+plot1    ## plot
 
 ## rearrange data for calculations
 tot.steps.day <- data %>%

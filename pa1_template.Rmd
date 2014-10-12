@@ -26,6 +26,7 @@ plot1 <- ggplot(data, aes(x = date, y = steps)) +
     labs(title = "Steps Per Day", x = 'Date', y = 'Number of Steps') +  
     scale_x_datetime()
 ```
+
 ```{r,echo=FALSE}
 plot1
 ```

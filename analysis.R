@@ -1,9 +1,11 @@
-# setwd("~/Documents/github_repositories/reproducible_research/project_1")
+setwd("~/Documents/github_repositories/reproducible_research/project_1")
 data <- read.csv('activity.csv')
 library('lubridate')
 library('ggplot2')
 library('dplyr')
 library('knitr')
+library('markdown')
+
 
 ## part 1: plot steps per day ...
 data$date <- as.POSIXct(data$date)
@@ -51,6 +53,7 @@ plot4 <- ggplot(data3, aes(x = date, y = steps)) +
     geom_histogram(stat = 'identity') + 
     labs(title = "Steps Per Day", x = 'Date', y = 'Number of Steps') + 
     scale_x_datetime()
+
 plot4
 
 tot.steps.day.data3 <- data3 %>%

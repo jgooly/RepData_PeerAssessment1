@@ -1,11 +1,12 @@
-setwd("~/Documents/github_repositories/reproducible_research/project_1")
-data <- read.csv('activity.csv')
+# setwd("~/Documents/github_repositories/reproducible_research/project_1")
+
 library('lubridate')
 library('ggplot2')
 library('dplyr')
 library('knitr')
 library('markdown')
 
+data <- read.csv('activity.csv')
 
 ## part 1: plot steps per day ...
 data$date <- as.POSIXct(data$date)
